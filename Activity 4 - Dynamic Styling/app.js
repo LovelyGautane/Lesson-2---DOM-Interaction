@@ -4,7 +4,8 @@ const app = Vue.createApp({
             style: '',
             color1: '',
             styleMe: '',
-            colorMe: ''
+            colorMe: '',
+            myButton: true
         };
     },
     methods: {
@@ -19,11 +20,13 @@ const app = Vue.createApp({
                     this.color1 = '';
                 }
         },
+        TButton() {
+            this.myButton = !this.myButton;
+        },
         PickC(event) {
             this.styleMe = event.target.value;
             this.colorMe = this.styleMe;
         }
-    }
 });
 
 app.mount('#assignment'); 
