@@ -10,6 +10,16 @@ const app = Vue.createApp({
         },
         Add() {
             this.result = this.result + 1;
+        },
+        count() {
+            if(this.result == 0) {
+                return this.result;
+            } else if(this.result > 0 && this.result < 37) {
+                return 'Not there yet!';
+            } else if(this.result > 37){
+                return 'Too much!';
+            }
+            return this.result;
         }
     }
 });
