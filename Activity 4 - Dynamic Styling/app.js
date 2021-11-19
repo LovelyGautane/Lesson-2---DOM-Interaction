@@ -12,6 +12,9 @@ const app = Vue.createApp({
         get(event) {
             this.style = event.target.value;
             if(this.style === 'user') {
+                this.color1 = '';
+            } else if(this.style === 'user1') 
+            {
                 if(this.style === 'user1') {
                     this.color1 = 'user1';
                 } else if(this.style === 'user2') {
@@ -19,6 +22,7 @@ const app = Vue.createApp({
                 } else {
                     this.color1 = '';
                 }
+            }
         },
         TButton() {
             this.myButton = !this.myButton;
@@ -27,6 +31,6 @@ const app = Vue.createApp({
             this.styleMe = event.target.value;
             this.colorMe = this.styleMe;
         }
+    }
 });
-
-app.mount('#assignment'); 
+app.mount('#assignment');
