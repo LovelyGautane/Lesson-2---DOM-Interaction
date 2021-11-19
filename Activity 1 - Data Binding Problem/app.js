@@ -10,7 +10,7 @@ const app = Vue.createApp({
         age() {
             return this.myAge + 5;
         },
-        Uno() {
+        One() {
             const random = Math.random();
             if(random < 0.5) {
                 return '0'
