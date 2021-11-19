@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+  background-color: gray;
 }
 
 section {
@@ -17,39 +18,51 @@ section {
   padding: 1rem;
   text-align: center;
 }
+img {
+  height: 350px;
+  width: 40%;
+  margin-top: 20px;
+  border-radius: 5px;
+}
 
 h2 {
   font-size: 2rem;
   border-bottom: 4px solid #ccc;
-  color: #970076;
+  color: #074183;
   margin: 0 0 1rem 0;
 }
 
 p {
   font-size: 1.25rem;
   font-weight: bold;
-  background-color: #970076;
+  background-color: #030097;
   padding: 0.5rem;
   color: white;
   border-radius: 25px;
 }
 
 input {
-  font: inherit;
-  border: 1px solid #ccc;
+  width: 50%;
+  padding: 5px;
+  background: #074183;
+  margin-top: 15px;
+  border-color: #1f1f1f;
+  border-radius: 7px;
+  color: #66FCF1;
+  transition: 0.5s;
 }
 
 input:focus {
-  outline: none;
-  border-color: #1b995e;
-  background-color: #d7fdeb;
+  background-color: #0818a3;
+  color: #0b0c10;
+  border-color: #0b0c10;
 }
 
 button {
   font: inherit;
   cursor: pointer;
-  border: 1px solid #ff0077;
-  background-color: #ff0077;
+  border: 1px solid #b700ff;
+  background-color: #d400ff;
   color: white;
   padding: 0.05rem 1rem;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.26);
