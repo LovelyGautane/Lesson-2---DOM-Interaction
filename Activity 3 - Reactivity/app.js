@@ -1,8 +1,19 @@
 const app = Vue.createApp({
     data() {
         return {
-            result: 0
-        };
+            result: 0,
+            value: 0
+        }
+    },
+    watch: {
+        result(value) {
+            if(value >= 37) {
+                const that = this;
+                setTimeout(function() {
+                    that.result = 0;
+                }, 5000)
+            }
+        }
     },
     methods: {
         add() {
